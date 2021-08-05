@@ -1,6 +1,6 @@
 {
-    "name": "qr_reader",
-    "short_name": "qr_reader",
+    "name": "qr_reader_o",
+    "short_name": "qr_reader_o",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

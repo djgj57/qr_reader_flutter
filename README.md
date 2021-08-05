@@ -1,4 +1,4 @@
-# qr_reader
+# qr_reader_o
 
 A new Flutter project.
 
