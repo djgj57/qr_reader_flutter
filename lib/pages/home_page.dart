@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:qr_reader/models/scan_model.dart';
 import 'package:qr_reader/pages/direcciones_page.dart';
 import 'package:qr_reader/pages/mapas_page.dart';
-import 'package:qr_reader/providers/db_provider.dart';
 import 'package:qr_reader/providers/ui_provider.dart';
 import 'package:qr_reader/widgets/custom_navigatorbar.dart';
 import 'package:qr_reader/widgets/scan_button.dart';
@@ -41,8 +39,11 @@ class _HomePageBody extends StatelessWidget {
     final currentIndex = uiProvider.selectedMenuOpt;
 
     //TODO: Temporal leer la base de datos
-    final tempScan = new ScanModel(valor: 'http://www.google.com');
-    DBProvider.db.nuevoScan(tempScan);
+    // final tempScan = new ScanModel(valor: 'http://www.google.com');
+    // DBProvider.db.nuevoScan(tempScan);
+    // DBProvider.db.getScanById(1).then((scan) => print(scan.valor));
+    //DBProvider.db.deleteAllScans();
+    //DBProvider.db.getTodosLosScan().then(print);
 
     switch (currentIndex) {
       case 0:
